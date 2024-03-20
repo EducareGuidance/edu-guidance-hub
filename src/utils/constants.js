@@ -1,0 +1,1 @@
+export const cloudinaryLogo = 'https://res.cloudinary.com/dyy263lv5/image/upload/v1710926472/GUIDANCE_Logo_jjpfkl.svg'
