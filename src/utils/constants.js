@@ -9,3 +9,6 @@ export const cloudinaryCarouselImage1 = 'https://res.cloudinary.com/dyy263lv5/im
 export const cloudinaryCarouselImage2 = 'https://res.cloudinary.com/dyy263lv5/image/upload/v1710934527/Untitled-1-PNG_cvidbd.png'
 
 export const cloudinaryCarouselImage3 = 'https://res.cloudinary.com/dyy263lv5/image/upload/v1710933217/7_x_4-banner-_PNG_ff0pee.png'
+
+
+export const cloudinaryDisplayImage = 'https://res.cloudinary.com/dyy263lv5/image/upload/v1711014748/xakshgttvo9wde81icp4.png'

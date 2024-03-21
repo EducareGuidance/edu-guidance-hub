@@ -32,26 +32,6 @@ function Info() {
                 <button onClick={() => toogleShowFullInfo()} className='mt-4 p-2 mx-16 xl:mx-44 bg-green-500 text-white rounded-md text-lg'>{showFullInfo ? 'Read Less' : 'Read More'}</button>
             </div>
 
-            <div>
-
-                <div className='m-2 p-2 lg:mt-12 sm:mt-2'>
-                    <h2 className='font-bold text-2xl m-2 p-2 text-center'>Important Links</h2>
-
-                    <ul className='flex m-2 p-2 justify-center -mt-2'>
-                        <li className='m-2 p-2 mr-4 font-bold text-lg'>Notice</li>
-                        <li className='m-2 p-2 mr-4 font-bold text-lg'>Exams</li>
-                        <li className='m-2 p-2 mr-4 font-bold text-lg'>Events</li>
-                    </ul>
-                </div>
-
-
-                <div>
-
-                </div>
-
-
-            </div>
-
         </div>
     )
 }
