@@ -4,7 +4,7 @@ import { cloudinaryLogo } from '../utils/constants'
 
 function Header() {
     return (
-        <div className='flex justify-between m-4 p-4 border border-black'>
+        <div className='flex justify-between m-4 p-6 shadow-xl'>
             <div>
                 <img className='h-16 ml-2 ' src={cloudinaryLogo} alt="logo" />
             </div>

@@ -13,7 +13,7 @@ function Info() {
             <div className='m-2'>
                 <h2 className='font-bold text-2xl m-2 p-2 text-center'>Welcome to the Best Coaching Institute for JEE and NEET</h2>
 
-                <h3 className='font-bold text-3xl text-center p-2 text-blue-400 mb-4'>GUIDANCE EDUCARE</h3>
+                <h3 className='font-bold text-3xl text-center p-2 text-blue-400 mb-4'><span className='shadow-sm'>GUIDANCE EDUCARE</span></h3>
 
                 <p className={`w-3/4 m-auto `}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut malesuada neque. Praesent varius dui sed risus tincidunt volutpat. In leo elit, porta ac finibus vitae, tempor in felis. Vestibulum volutpat mauris lectus, a ullamcorper nisl hendrerit at. Vestibulum rhoncus iaculis metus in tristique. Suspendisse potenti. Aenean ut tempus lorem.
                     <br />

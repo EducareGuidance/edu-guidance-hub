@@ -1,5 +1,6 @@
 .notice-container {
-    overflow: hidden; 
+    overflow: hidden;
+    height:280px; 
 }
 
 .notice-item {
