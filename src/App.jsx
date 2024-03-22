@@ -1,16 +1,20 @@
 import Header from "./components/Header"
-import Carousel from "./components/Carousel"
-import Info from "./components/Info"
-import Notice from "./components/Notice/Notice"
+import Footer from "./components/Footer"
+import Body from "./pages/Body"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Carousel />
-      <Info />
-      <Notice />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Body />} />
+        </Routes>
+        <Footer />
+      </Router>
+
     </>
   )
 }

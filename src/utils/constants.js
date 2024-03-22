@@ -12,3 +12,6 @@ export const cloudinaryCarouselImage3 = 'https://res.cloudinary.com/dyy263lv5/im
 
 
 export const cloudinaryDisplayImage = 'https://res.cloudinary.com/dyy263lv5/image/upload/v1711014748/xakshgttvo9wde81icp4.png'
+
+
+export const courseImage = 'https://potentialconcept.in/images/courses/a159e783cd46503b3b8abdd9de9e59b7.webp'
