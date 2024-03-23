@@ -15,6 +15,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
+      <hr className="my-8 border-t-2 border-gray-300" />
 
       <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 px-10 py-8 text-center'>
         <ul>
