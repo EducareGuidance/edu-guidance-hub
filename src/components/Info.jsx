@@ -13,7 +13,7 @@ function Info() {
     }
 
     return (
-        <div className='m-44 mt-8  rounded-lg shadow-2xl'>
+        <div className='m-44 mt-20 rounded-lg shadow-2xl'>
             <div className='m-2'>
                 <h2 className='font-bold text-2xl m-2 p-2 text-center'>Welcome to the Best Coaching Institute for JEE and NEET</h2>
 

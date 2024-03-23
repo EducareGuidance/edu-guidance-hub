@@ -18,16 +18,17 @@ const DropdownMenu = () => {
       {isOpen && (
         <div className="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg z-10">
           <ul className="py-1">
-            <li><a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Class VI VII VIII IX X</a></li>
-            <li><a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Class XI & XII (ALL STREAM)</a></li>
-            
+            <li>
+              <div className="block px-4 py-2 text-gray-800 hover:bg-gray-200 focus:outline-none">Class VI VII VIII IX X</div>
+            </li>
+            <li>
+              <div className="block px-4 py-2 text-gray-800 hover:bg-gray-200 focus:outline-none">Class XI & XII (ALL STREAM)</div>
+            </li>
           </ul>
         </div>
       )}
     </div>
   );
 };
-
-
 
 export default DropdownMenu;

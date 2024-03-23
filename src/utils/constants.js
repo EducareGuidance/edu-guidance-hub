@@ -15,3 +15,5 @@ export const cloudinaryDisplayImage = 'https://res.cloudinary.com/dyy263lv5/imag
 
 
 export const courseImage = 'https://potentialconcept.in/images/courses/a159e783cd46503b3b8abdd9de9e59b7.webp'
+
+export const darkThemeIcon = 'https://res.cloudinary.com/dyy263lv5/image/upload/v1711226218/night-mode_1_oult9t.png'
