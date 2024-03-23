@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import DropdownMenu from './DropdownMenu';
 import DropdownMenu1 from './DropdownMenu1';
+import { Link } from 'react-router-dom';
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,24 +13,27 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 w-full bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 z-50">
-      <div className="max-w-7xl mx-auto px-0 py-7">
+    <nav className="sticky top-0 w-full bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 z-50 ">
+      <div className="max-w-7xl mx-auto px-0 py-7 ">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center ">
-              <a href="/" className="text-white text-xl"><span className='font-times text-black '>GUIDANCE</span><span className='perpetua italic tracking-wide text-yellow-500'>educare</span></a>
+              <Link to='/'><span className='font-times text-black '>GUIDANCE</span><span className='perpetua italic tracking-wide text-yellow-500'>educare</span></Link>
             </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
             <ul className='flex text-lg m-2 px-4 py-2'>
-            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">Home</button></a></li>
-            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">Courses</button></a></li>
-            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">Admission</button></a></li>
-            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110"><DropdownMenu/></button></a></li>
-            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">About Us</button></a></li>
+            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium shadow-xl"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">Home</button></a></li>
+            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium shadow-xl"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">Courses</button></a></li>
+            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium shadow-xl"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">Admission</button></a></li>
+            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium shadow-xl"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">Media Gallery</button></a></li>
+            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium shadow-xl"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110"><DropdownMenu/></button></a></li>
+            <li><a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium shadow-xl"><button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-4 rounded mr-2 transition-transform duration-300 hover:scale-110">About Us</button></a></li>
             </ul>
+            
             </div>
+            
           </div>
           <div className="md:hidden">
             <button onClick={toggleNavbar} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
@@ -51,6 +57,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
+      
     </nav>
   );
 };
