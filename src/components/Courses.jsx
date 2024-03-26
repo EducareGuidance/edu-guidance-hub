@@ -9,7 +9,7 @@ function Courses() {
                 <h3 className='mt-3 p-2 text-lg'>Learn from the <span className='text-xl font-bold'>Best</span> Mentors</h3>
             </div>
 
-            <div className='m-4 p-2 py-8 mt-8 xl:w-2/6 w-3/4  mx-auto shadow-xl rounded-md'>
+            <div className='m-4 p-2 py-8 mt-8 xl:w-2/6 w-3/4  mx-auto shadow-xl rounded-md cursor-pointer'>
                 <div className='flex justify-around'>
                     <img className='w-24 h-24 my-auto' src={courseImage} alt="course image" />
                     <div className='px-8'>
@@ -23,7 +23,7 @@ function Courses() {
 
             </div>
 
-            <div className='m-4 p-2 py-8 mt-8 xl:w-2/6 w-3/4  mx-auto shadow-xl rounded-md'>
+            <div className='m-4 p-2 py-8 mt-8 xl:w-2/6 w-3/4  mx-auto shadow-xl rounded-md cursor-pointer'>
                 <div className='flex justify-around'>
                     <img className='w-24 h-24 my-auto' src={courseImage} alt="course image" />
                     <div className='px-8'>

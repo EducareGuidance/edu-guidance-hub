@@ -16,7 +16,7 @@ function Carousel() {
     };
 
     return (
-        <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 xl:mt-16">
+        <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 xl:mt-10">
             <Slider {...settings} className="mt-6">
                 <div className="h-48 md:h-56 lg:h-64 outline-none">
                     <img src={cloudinaryCarouselImage1} alt="" className="w-full h-full rounded-lg" />

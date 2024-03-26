@@ -13,7 +13,7 @@ function Notice() {
     return (
         <div className='xl:flex mt-16 xl:mt-28'>
             <div className='m-2 p-2 w-2/3 mx-auto mb-16 xl:w-1/3 xl:ml-64 xl:mt-12'>
-                <img src={cloudinaryDisplayImage} alt='display' className='w-full' />
+                <img src={cloudinaryDisplayImage} alt='display' className='w-full rounded-lg object-cover shadow-lg' />
             </div>
 
             <div className='shadow-2xl rounded-lg w-2/3 xl:w-1/3 mx-auto'>

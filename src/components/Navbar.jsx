@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 w-full bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 z-50 ">
-      <div className="max-w-7xl mx-auto px-0 py-7 ">
+      <div className="max-w-7xl mx-auto px-0 py-5 lg:py-6">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center ">
