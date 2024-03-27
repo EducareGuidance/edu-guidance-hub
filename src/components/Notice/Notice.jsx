@@ -4,8 +4,9 @@ import { cloudinaryDisplayImage } from '../../utils/constants';
 
 function Notice() {
     const [clickedLink, setClickedLink] = useState('notice');
+    
     const handleLinkClick = (link) => {
-        setClickedLink(link === clickedLink ? clickedLink : link);
+        setClickedLink(link);
     };
 
     const notices = ['notice1', 'notice2', 'notice3', 'notice4'];
@@ -20,9 +21,9 @@ function Notice() {
                 <div className='m-2 p-2 lg:mt-12 -mt-4'>
                     <h2 className='font-bold text-2xl m-2 p-2 text-center'>Important Links</h2>
                     <ul className='flex m-2 p-2 justify-center -mt-5'>
-                        <li onClick={() => { handleLinkClick('notice') }} className={`m-2 p-2 mr-4 font-semibold text-lg cursor-pointer ${clickedLink === 'notice' ? 'bg-white' : 'bg-blue-700'} ${clickedLink === 'notice' ? 'text-yellow-500' : 'text-white'} rounded-md w-3/4 text-center shadow-lg`}>Notice</li>
-                        <li onClick={() => { handleLinkClick('exam') }} className={`m-2 p-2 mr-4 font-semibold text-lg cursor-pointer ${clickedLink === 'exam' ? 'bg-white' : 'bg-blue-700'} ${clickedLink === 'exam' ? 'text-yellow-500' : 'text-white'} rounded-md w-3/4 text-center shadow-lg`}>Exams</li>
-                        <li onClick={() => { handleLinkClick('events') }} className={`m-2 p-2 mr-4 font-semibold text-lg cursor-pointer ${clickedLink === 'events' ? 'bg-white' : 'bg-blue-700'} ${clickedLink === 'events' ? 'text-yellow-500' : 'text-white'} rounded-md w-3/4 text-center shadow-lg`}>Events</li>
+                        <li onClick={() => handleLinkClick('notice')} className={`m-2 p-2 mr-4 font-semibold text-lg cursor-pointer ${clickedLink === 'notice' ? 'bg-white text-yellow-500' : 'bg-blue-700 text-white'} rounded-md w-3/4 text-center shadow-lg`}>Notice</li>
+                        <li onClick={() => handleLinkClick('exam')} className={`m-2 p-2 mr-4 font-semibold text-lg cursor-pointer ${clickedLink === 'exam' ? 'bg-white text-yellow-500' : 'bg-blue-700 text-white'} rounded-md w-3/4 text-center shadow-lg`}>Exams</li>
+                        <li onClick={() => handleLinkClick('events')} className={`m-2 p-2 mr-4 font-semibold text-lg cursor-pointer ${clickedLink === 'events' ? 'bg-white text-yellow-500' : 'bg-blue-700 text-white'} rounded-md w-3/4 text-center shadow-lg`}>Events</li>
                     </ul>
                 </div>
 

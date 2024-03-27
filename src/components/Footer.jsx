@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -10,9 +11,11 @@ const Footer = () => {
           <span className="text-yellow-500 text-5xl">Join</span><span className='font-times text-black'>GUIDANCE</span> <span className='font-perpetua text-black'>educare</span>Today
         </h1>
         <div className="flex pl-4">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded transition-transform transform hover:scale-105">
-            Contact Us
-          </button>
+          <Link to='/contact'>
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded transition-transform transform hover:scale-105">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
       <hr className="my-8 border-t-2 border-gray-300" />
