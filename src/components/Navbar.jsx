@@ -31,9 +31,7 @@ const Navbar = () => {
                     <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110">Home</button>
                   </Link>
                 </li>
-                <li>
-                  <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110">Courses</button>
-                </li>
+               
                 <li>
                   <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110">Admission</button>
                 </li>
