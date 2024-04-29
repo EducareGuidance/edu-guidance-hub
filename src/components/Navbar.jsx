@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import DropdownMenu from './DropdownMenu';
 import { Link } from 'react-router-dom';
+import userSvg from '../assets/user.svg'
 
 
 const Navbar = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
                     <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110">Home</button>
                   </Link>
                 </li>
-               
+
                 <li>
                   <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110">Admission</button>
                 </li>
@@ -42,8 +43,15 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-2 rounded mr-2 transition-transform duration-300 hover:scale-110">About Us</button>
+                </li>
+                <li>
                   <Link to='/contact'>
                     <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-2 rounded mr-2 transition-transform duration-300 hover:scale-110">Contact Us</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/register'>
+                    <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-2 rounded mr-2 transition-transform duration-300 hover:scale-110">Register/Login</button>
                   </Link>
                 </li>
 

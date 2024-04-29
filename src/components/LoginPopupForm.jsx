@@ -1,27 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useForm } from 'react-hook-form';
-import crossSvg from '../assets/cross.svg';
-import { Link } from 'react-router-dom';
-import LoginPopupForm from './LoginPopupForm';
+import React from 'react'
+import { useForm } from 'react-hook-form'
+import crossSvg from '../assets/cross.svg'
 
-function PopupForm() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+function LoginPopupForm() {
+    const {register, handleSubmit} = useForm();
 
-    const [isVisible, setIsVisible] = useState(false)
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsVisible(true)
-        }, 3000)
-
-        return () => {
-            clearTimeout(timer);
-        }
-    }, [])
-
-    const onSubmit = (data) => { console.log(data) }
-    return (
-        <div className={`space-y-24 fixed inset-0 flex items-center justify-center ${isVisible ? '' : 'hidden'}`}>
+  return (
+    <div className={`space-y-24 fixed inset-0 flex items-center justify-center`}>
 
             <div className='fixed inset-0 bg-black opacity-50'></div>
             <div className='bg-gray-100 w-full max-w-lg p-6 rounded-lg shadow-lg z-10'>
@@ -60,16 +45,14 @@ function PopupForm() {
                     <div className='flex justify-center mb-1'>
                         <button type='submit' className='bg-blue-600 hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md shadow-lg'>Submit</button>
                     </div>
-                    <Link to='/login'>
-                        <div className='text-center text-gray-400 underline cursor-pointer'>
-                            <p>Already an existing user? Login here</p>
-                        </div>
-                    </Link>
+                    <div className='text-center text-gray-400 underline cursor-pointer'>
+                        <p>Already an existing user? Login here</p>
+                    </div>
 
                 </form>
             </div>
         </div>
-    )
+  )
 }
 
-export default PopupForm
+export default LoginPopupForm
