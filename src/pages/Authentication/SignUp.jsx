@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 import { auth } from '../../firebase/firebase'
+import app from '../../firebase/firebase'
+import { getDatabase, push, ref, set, child } from 'firebase/database'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 
 function SignUp () {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
+    getValues
   } = useForm()
   const [submitError, setSubmitError] = useState(null)
 
@@ -21,6 +24,7 @@ function SignUp () {
         password
       )
       const user = userCredentials.user
+      writeUserData(user.uid, email, password)
       console.log('User signed up:', user)
     } catch (error) {
       console.error('Error submitting form', error.message)
@@ -28,6 +32,20 @@ function SignUp () {
     }
   }
 
+  function writeUserData (userId, email, password) {
+    const db = getDatabase(app)
+    const usersRef = ref(db, 'users')
+    set(child(usersRef, userId), {
+      email: email,
+      password: password
+    })
+      .then(() => {
+        console.log('Data saved successfully')
+      })
+      .catch(error => {
+        console.error('Error saving data: ', error)
+      })
+  }
   return (
     <div className='xl:flex xl:justify-center'>
       <div className='xl:w-3/4 mx-4 my-2 px-4 py-2'>
@@ -242,6 +260,7 @@ function SignUp () {
                     value='Create account'
                     className='w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90'
                   />
+
                   {submitError && <p className='text-red-500'>{submitError}</p>}
                 </div>
 
