@@ -47,7 +47,8 @@ function SignUp () {
       })
   }
   return (
-    <div className='xl:flex xl:justify-center'>
+
+    <div className='xl:flex xl:justify-center h-screen flex items-center'>
       <div className='xl:w-3/4 mx-4 my-2 px-4 py-2'>
         <div className='rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark'>
           <div className='w-full border-stroke dark:border-strokedark xl:w-1/2 xl:border-l-2'>
