@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Admission from './components/Admission'
 import LoginTemp from './pages/Authentication/LoginTemp'
 import NavbarTemp from './components/NavbarTemp'
+import About from './components/About'
 
 function App () {
   return (
@@ -22,6 +23,7 @@ function App () {
           <Route path='/subjects' element={<Subjects />} />
           <Route path='/register' element={<SignUp />} />
           <Route path='/login' element={<LoginTemp />} />
+          <Route path='/about' element={<About/>}/>
         </Routes>
         <Footer />
       </Router>
