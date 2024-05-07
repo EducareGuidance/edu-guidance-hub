@@ -34,7 +34,9 @@ const Navbar = () => {
                 </li>
 
                 <li>
+                  <Link to ='/admission'>
                   <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110">Admission</button>
+                  </Link>
                 </li>
                 <li>
                   <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110">
@@ -54,6 +56,7 @@ const Navbar = () => {
                     <button className="text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-2 rounded mr-2 transition-transform duration-300 hover:scale-110">Register/Login</button>
                   </Link>
                 </li>
+               
 
               </ul>
             </div>
@@ -75,9 +78,10 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link to='/'>
                 <button className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</button>
-              </Link>
+              
               <button className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Courses</button>
               <button className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Admission</button>
+              </Link>
               <button className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                 <DropdownMenu />
               </button>
