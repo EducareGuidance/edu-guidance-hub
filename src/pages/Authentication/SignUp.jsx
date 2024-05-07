@@ -47,7 +47,8 @@ function SignUp () {
       })
   }
   return (
-<>
+    <div className='xl:flex xl:justify-center'>
+      <div className='xl:w-1/2 mx-4 my-2 px-4 py-2'>
         <div className='rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark'>
           <div className='w-full p-4 sm:p-12.5 xl:p-17.5'>
             <h1 className='text-center font-bold text-2xl'>Sign Up</h1>
