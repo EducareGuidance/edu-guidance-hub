@@ -10,29 +10,34 @@ import {
   HeartIcon
 } from '@heroicons/react/24/solid'
 
+import blog1 from '/src/assets/image/blogs/blog-1.svg'
+import blog12 from '/src/assets/image/blogs/blog-12.jpeg'
+import blog10 from '/src/assets/image/blogs/blog-10.jpeg'
+import blog13 from '/src/assets/image/blogs/blog-13.png'
+
 import CategoryCard from '../components/CategoryCard'
 
 const CATEGORIES = [
   {
-    img: '/src/assets/image/blogs/blog-1.svg',
+    img: blog1, // Replace image path with imported SVG
     icon: HeartIcon,
     title: 'Frontend Web Development',
     desc: '300 Courses'
   },
   {
-    img: '/src/assets/image/blogs/blog-12.jpeg',
+    img: blog12, // Replace image path with imported SVG
     icon: PuzzlePieceIcon,
     title: 'Backend Web Development',
     desc: '200 Courses'
   },
   {
-    img: '/src/assets/image/blogs/blog-10.jpeg',
+    img: blog10, // Replace image path with imported SVG
     icon: GlobeEuropeAfricaIcon,
     title: 'Web Security & Performance',
     desc: '240 Courses'
   },
   {
-    img: '/src/assets/image/blogs/blog-13.png',
+    img: blog13, // Replace image path with imported SVG
     icon: MicrophoneIcon,
     title: 'Full-Stack Web Development',
     desc: '100 Courses'

@@ -3,44 +3,51 @@
 import { Typography } from '@material-tailwind/react'
 import CourseCard from '../components/CourseCard'
 
+// Import SVG images
+import blog4 from '/src/assets/image/blogs/blog4.svg'
+import blog3 from '/src/assets/image/blogs/blog3.svg'
+import blog2 from '/src/assets/image/blogs/blog2.svg'
+import blog5 from '/src/assets/image/blogs/blog5.svg'
+import blog6 from '/src/assets/image/blogs/blog6.svg'
+
 const COURSES = [
   {
-    img: '/src/assets/image/blogs/blog4.svg',
+    img: blog4, // Replace image path with imported SVG
     tag: 'Beginner • 25 Classes • 200 Students',
     title: 'Unlock the Web Foundation',
     label: 'from $99',
     desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch."
   },
   {
-    img: '/src/assets/image/blogs/blog3.svg',
+    img: blog3, // Replace image path with imported SVG
     tag: 'Medium • 10 Classes • 150 Students',
     title: 'Craft Websites That Adapt',
     label: 'from $199',
     desc: 'Our Responsive Design course teaches you the art of creating websites that seamlessly adapt to different devices and screen sizes.'
   },
   {
-    img: '/src/assets/image/blogs/blog2.svg',
+    img: blog2, // Replace image path with imported SVG
     tag: 'Medium • 23 Classes • 590 Students',
     title: 'Master the Power of React',
     label: 'from $499',
     desc: 'Take your frontend development to the next level with our React Development course. Learn how to build interactive, dynamic web applications.'
   },
   {
-    img: '/src/assets/image/blogs/blog5.svg',
+    img: blog5, // Replace image path with imported SVG
     tag: 'Beginner • 35 Classes • 400 Students',
     title: 'Frontend Essentials Course',
     label: 'from $49',
     desc: 'For aspiring web developers, the Frontend Essentials course is a must. Dive into the core technologies - HTML, CSS, and JavaScript.'
   },
   {
-    img: '/src/assets/image/blogs/blog6.svg',
+    img: blog6, // Replace image path with imported SVG
     tag: 'Medium • 10 Classes • 150 Students',
     title: 'Streamline Your CSS Workflow',
     label: 'from $99',
     desc: 'Our Tailwind CSS Introduction course teaches you how to use this utility-first CSS framework to streamline your workflow, saving you time.'
   },
   {
-    img: '/src/assets/image/blogs/blog4.svg',
+    img: blog4, // Replace image path with imported SVG
     tag: 'Medium • 33 Classes • 690 Students',
     title: 'Master Backend Development',
     label: 'from $299',

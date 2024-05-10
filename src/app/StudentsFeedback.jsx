@@ -3,27 +3,32 @@ import React from 'react'
 import FeedbackCard from '../components/FeedbackCard'
 import { Typography } from '@material-tailwind/react'
 
+// Import avatar images
+import avatar1 from '/src/assets/image/avatar1.jpg'
+import avatar2 from '/src/assets/image/avatar2.jpg'
+import avatar3 from '/src/assets/image/avatar3.jpg'
+
 const FEEDBACKS = [
   {
     feedback:
       'The instructors are top-notch, and the hands-on approach to learning is incredibly effective.',
     client: 'Jessica Devis',
     title: 'Web Developer @ MARKETING DIGITAL LTD.',
-    img: '/src/assets/image/avatar1.jpg'
+    img: avatar1 // Use imported avatar image
   },
   {
     feedback:
       'I went from knowing nothing about web development to landing my dream job as a frontend developer.',
     client: 'Linde Michel',
     title: 'Web Developer @ APPLE INC.',
-    img: '/src/assets/image/avatar3.jpg'
+    img: avatar3 // Use imported avatar image
   },
   {
     feedback:
       'The courses are structured well, and the projects helped me build a strong portfolio.',
     client: 'Misha Stam',
     title: 'Web Developer @ APPLE INC.',
-    img: '/src/assets/image/avatar2.jpg'
+    img: avatar2 // Use imported avatar image
   }
 ]
 

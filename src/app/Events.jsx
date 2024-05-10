@@ -10,27 +10,32 @@ import {
 } from '@material-tailwind/react'
 import EventCard from '../components/EventCard'
 
+import blog1 from '/src/assets/image/blogs/blog-1.svg'
+import blog2 from '/src/assets/image/blogs/blog2.svg'
+import blog3 from '/src/assets/image/blogs/blog3.svg'
+import blog4 from '/src/assets/image/blogs/blog4.svg'
+
 const EVENTS = [
   {
-    img: '/src/assets/image/blogs/blog-1.svg',
+    img: blog1, // Replace image path with imported SVG
     title: 'Future of Web Development: Trends and Innovations',
     desc: 'Discover the latest trends and innovations shaping the future of web development.',
     buttonLabel: 'register for free'
   },
   {
-    img: '/src/assets/image/blogs/blog2.svg',
+    img: blog2, // Replace image path with imported SVG
     title: 'WebDev Pro Code-a-Thon: Build a Responsive Website',
     desc: 'Participants will have 48 hours to create a responsive website from scratch using HTML, CSS, and JavaScript.',
     buttonLabel: 'register for free'
   },
   {
-    img: '/src/assets/image/blogs/blog3.svg',
+    img: blog3, // Replace image path with imported SVG
     title: 'Ask the Experts: Frontend Web Development',
     desc: 'Join our live Q&A session with our experienced instructors. Get answers to your queries, insights into best practices.',
     buttonLabel: 'get ticket'
   },
   {
-    img: '/src/assets/image/blogs/blog4.svg',
+    img: blog4, // Replace image path with imported SVG
     title: 'Web Accessibility: Building Inclusive Websites',
     desc: 'Industry experts will discuss the importance of inclusive design and share strategies for creating websites.',
     buttonLabel: 'get ticket'

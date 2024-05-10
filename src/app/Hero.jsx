@@ -1,6 +1,12 @@
 'use client'
 import { Button, Typography, Card } from '@material-tailwind/react'
 
+// Import SVG logos
+import pinterestLogo from '/src/assets/logos/logo-pinterest.svg'
+import netflixLogo from '/src/assets/logos/logo-netflix.svg'
+import coinbaseLogo from '/src/assets/logos/logo-coinbase.svg'
+import googleLogo from '/src/assets/logos/logo-google.svg'
+
 function Hero () {
   return (
     <div className='!flex h-[55vh] w-full items-center justify-between px-10'>
@@ -37,28 +43,28 @@ function Hero () {
                 width={144}
                 height={144}
                 className='w-36 grayscale opacity-60'
-                src='/src/assets/logos/logo-pinterest.svg'
+                src={pinterestLogo} // Use imported SVG logo
                 alt='pinterest'
               />
               <img
                 width={144}
                 height={144}
                 className='w-36 grayscale opacity-60'
-                src='/src/assets/logos/logo-netflix.svg'
+                src={netflixLogo} // Use imported SVG logo
                 alt='netflix'
               />
               <img
                 width={144}
                 height={144}
                 className='w-36 grayscale opacity-60'
-                src='/src/assets/logos/logo-coinbase.svg'
+                src={coinbaseLogo} // Use imported SVG logo
                 alt='coinbase'
               />
               <img
                 width={144}
                 height={144}
                 className='w-36 grayscale opacity-60'
-                src='/src/assets/logos/logo-google.svg'
+                src={googleLogo} // Use imported SVG logo
                 alt='google'
               />
             </div>

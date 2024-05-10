@@ -1,6 +1,11 @@
 'use client'
 import { Typography, Card, CardBody, Avatar } from '@material-tailwind/react'
 
+// Import testimonial image
+import testimonialImage from '/src/assets/image/blogs/blog6.svg'
+// Import avatar image
+import avatar3 from '/src/assets/image/avatar3.jpg'
+
 function Testimonial () {
   return (
     <section className='px-8 py-40'>
@@ -11,7 +16,7 @@ function Testimonial () {
               <img
                 width={768}
                 height={768}
-                src='/src/assets/image/blogs/blog6.svg'
+                src={testimonialImage} // Use imported testimonial image
                 alt='testimonial image'
                 className='w-full h-full scale-110 object-cover'
               />
@@ -48,7 +53,7 @@ function Testimonial () {
               <div className='flex items-center mt-8 gap-4'>
                 <Avatar
                   variant='circular'
-                  src='/src/assets/image/avatar3.jpg'
+                  src={avatar3} // Use imported avatar image
                   alt='spotify'
                   size='md'
                 />
