@@ -6,6 +6,7 @@ import pinterestLogo from '/src/assets/logos/logo-pinterest.svg'
 import netflixLogo from '/src/assets/logos/logo-netflix.svg'
 import coinbaseLogo from '/src/assets/logos/logo-coinbase.svg'
 import googleLogo from '/src/assets/logos/logo-google.svg'
+import image8Svg from '/src/assets/image/image8.svg'
 
 function Hero () {
   return (
@@ -13,7 +14,7 @@ function Hero () {
       <img
         width={1200}
         height={1200}
-        src='/src/assets/image/image8.svg'
+        src={image8Svg}
         alt='bg-img'
         className='absolute -z-50  inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center'
       />
